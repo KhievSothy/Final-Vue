@@ -1,0 +1,20 @@
+<template>
+  <div class="sub_page">
+    <div class="hero_area">
+      <Header></Header>
+    </div>
+    <router-view></router-view>
+  </div>
+  <Footer />
+</template>
+,<script>
+import NotFound from "@/components/NotFound.vue";
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+export default {
+  components: {
+    Header,
+    Footer,
+  },
+};
+</script>
